@@ -34,23 +34,18 @@ a {
 
 .header {
     background: #d6d3c8;
-    padding: 20px;
-    display: flex;
+    padding: 20px 0;
 }
 
-.header-logo {
-    flex-grow: 1;
+.header-menu li a {
+    color: #252525;
+    font-size: 1.125em;
+    padding: 0 10px;
 }
 
 .header-menu ul {
     display: flex;
     flex-wrap: wrap;
-}
-
-.header-menu li a {
-    color: #373737;
-    font-size: 1.125em;
-    padding: 0 10px;
 }
 
 .header-menu li:first-child a {
@@ -112,16 +107,12 @@ a {
     background-position: 0 calc(-24px * 5);
 }
 
-@media (max-width: 739px) {
-    .main-container {
-        flex-direction: column;
-    }
+@media (max-width: 767px) {
     .side-nav {
-        margin: 10px;
         background: none;
-        max-width: 100%;
     }
     .side-nav ul {
+        margin-top: 10px;
         display: flex;
         flex-wrap: wrap;
     }
